@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: sql_runner
+    network_mode: "none"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: testdb
+    volumes:
+      - ./schema:/data/schema:ro
+      - ./tables:/data/tables:ro
+      - ./src:/data/src:ro
+      - ./output:/data/output
+      - ./scripts/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
+    restart: "no"
