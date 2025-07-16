@@ -1,17 +1,18 @@
-CREATE TABLE oceny (
-  id_gry INT,
-  id_gracza INT,
-  stan TEXT,
-  ocena INT
+CREATE TABLE laziki (
+  nr_lazika INT,
+  nazwa_lazika TEXT,
+  rok_wyslania INT,
+  wsp_ladowania TEXT
 );
-CREATE TABLE gracze (
-  id_gracza INT,
-  imie TEXT,
-  nazwisko TEXT,
-  wiek INT
+CREATE TABLE obszary (
+  kod_obszaru TEXT,
+  nazwa_obszaru TEXT
 );
-CREATE TABLE gry (
-  id_gry INT,
-  nazwa TEXT,
-  kategoria TEXT
+CREATE TABLE pomiary (
+  nr_lazika INT,
+  data_pomiaru DATE,
+  kod_obszaru TEXT,
+  wspolrzedne TEXT,
+  glebokosc INT,
+  ilosc INT
 );
