@@ -1,0 +1,40 @@
+sourceFile: src/query.sql
+
+limits:
+  time: 8000
+  memory: 512000
+
+tasks:
+  task_1:
+    testedFunctionName: null
+    userInputFilename: null
+    userOutputFilename: output/result.csv
+    checkTypes:
+      FAST:
+        inputFilesDirectory: tests/task_1/fast/in
+        outputFilesDirectory: tests/task_1/fast/out
+      FULL:
+        inputFilesDirectory: tests/task_1/full/in
+        outputFilesDirectory: tests/task_1/full/out
+  task_2:
+    testedFunctionName: task_2
+    userInputFilename: liczby.txt
+    userOutputFilename: wyniki.txt
+    checkTypes:
+      FAST:
+        inputFilesDirectory: tests/task_2/fast/in
+        outputFilesDirectory: tests/task_2/fast/out
+      FULL:
+        inputFilesDirectory: tests/task_2/full/in
+        outputFilesDirectory: tests/task_2/full/out
+  task_3:
+    testedFunctionName: task_3
+    userInputFilename: liczby.txt
+    userOutputFilename: wyniki.txt
+    checkTypes:
+      FAST:
+        inputFilesDirectory: tests/task_3/fast/in
+        outputFilesDirectory: tests/task_3/fast/out
+      FULL:
+        inputFilesDirectory: tests/task_3/full/in
+        outputFilesDirectory: tests/task_3/full/out
