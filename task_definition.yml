@@ -8,7 +8,7 @@ tasks:
   task_1:
     testedFunctionName: null
     userInputFilename: null
-    userOutputFilename: output/result.csv
+    userOutputFilename: result.csv
     checkTypes:
       FULL:
         inputFilesDirectory: null
