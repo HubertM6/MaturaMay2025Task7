@@ -29,7 +29,7 @@ for file in /data/tables/*; do
 done
 
 echo "Running user query..."
-mysql --local-infile=1 -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE" --batch --raw < /data/src/query.sql > /data/src/result.csv
+mysql --local-infile=1 -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE" --batch --raw --skip-column-names < /data/src/query.sql > /data/src/result.csv
 echo "Done."
 
 # echo "Shutting down..."
