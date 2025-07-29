@@ -12,6 +12,7 @@ services:
       - ./schema:/data/schema:ro
       - ./tables:/data/tables:ro
       - ./src:/data/src
+      - ./output:/data/output
       - ./scripts/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
       - ./my.cnf:/etc/mysql/conf.d/custom.cnf:ro
     restart: "no"
