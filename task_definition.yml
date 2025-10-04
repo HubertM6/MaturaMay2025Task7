@@ -10,6 +10,6 @@ tasks:
     userInputFilename: null
     userOutputFilename: result.csv
     checkTypes:
-      FULL:
+      OFFICIAL:
         inputFilesDirectory: null
         outputFilesDirectory: tests/task_1
