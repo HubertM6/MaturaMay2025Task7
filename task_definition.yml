@@ -6,7 +6,7 @@ limits:
 
 tasks:
   task_1:
-    testedFunctionName: null
+    testedFunctionName: task_1
     userInputFilename: null
     userOutputFilename: result.csv
     maxPoints: 3
