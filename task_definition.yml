@@ -9,7 +9,7 @@ tasks:
     testedFunctionName: task_1
     userInputFilename: null
     userOutputFilename: result.csv
-    maxPoints: 3
+    maxPoints: 2
     checkerFilename: "checkers/subtask1checker.cpp"
     checkTypes:
       OFFICIAL:
