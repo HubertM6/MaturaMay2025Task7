@@ -11,6 +11,7 @@ int main(int argc, char* argv[])
     registerTestlibCmd(argc, argv);
 
     string userAnswer = ouf.readLine();
+    ouf.readEof();
 
     if (userAnswer == "Mare Boreum") quitp(_pc(2), "Poprawna odpowiedź.");
     else if (userAnswer == "Sinus Sabaeus") quitp(_pc(1), "Podano nazwę obszaru, na którym znaleziono najmniej wody.");
